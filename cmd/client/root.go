@@ -61,8 +61,8 @@ var rootCmdOpts struct {
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "swarm",
-	Short: "Bhojpur Swarm is a collective intelligence engine powered by Kubernetes",
+	Use:   "swarmctl",
+	Short: "Bhojpur Swarmctl is a collective intelligence command engine",
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
 		if verbose {
 			log.SetLevel(log.DebugLevel)

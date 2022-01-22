@@ -32,8 +32,8 @@ var verbose bool
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "swarm",
-	Short: "Bhojpur Swarm is a collective intelligence engine powered by Kubernetes",
+	Use:   "swarmsvr",
+	Short: "Bhojpur SwarmEngine is a high performance, collective intelligence processor",
 	PersistentPreRun: func(cmd *cobra.Command, args []string) {
 		if verbose {
 			log.SetLevel(log.DebugLevel)
